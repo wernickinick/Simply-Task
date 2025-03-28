@@ -61,6 +61,83 @@ public class SimplyTask {
         AddingCategoryButton.setBounds(130,130,150,50);
         AddingCategory.add(AddingCategoryButton);
 
+        JPanel Category1Panel = new JPanel();
+        Category1Panel.setBounds(0,0,800,600);
+        Category1Panel.setBackground(Color.lightGray);
+        Category1Panel.setLayout(null);
+        Category1Panel.setVisible(false);
+        main.add(Category1Panel);
+
+        JPanel Category2Panel = new JPanel();
+        Category2Panel.setBounds(0,0,800,600);
+        Category2Panel.setBackground(Color.lightGray);
+        Category2Panel.setLayout(null);
+        Category2Panel.setVisible(false);
+        main.add(Category2Panel);
+
+        JPanel Category3Panel = new JPanel();
+        Category3Panel.setBounds(0,0,800,600);
+        Category3Panel.setBackground(Color.lightGray);
+        Category3Panel.setLayout(null);
+        Category3Panel.setVisible(false);
+        main.add(Category3Panel);
+
+        JPanel Category4Panel = new JPanel();
+        Category4Panel.setBounds(0,0,800,600);
+        Category4Panel.setBackground(Color.lightGray);
+        Category4Panel.setLayout(null);
+        Category4Panel.setVisible(false);
+        main.add(Category4Panel);
+
+        JPanel Category5Panel = new JPanel();
+        Category5Panel.setBounds(0,0,800,600);
+        Category5Panel.setBackground(Color.lightGray);
+        Category5Panel.setLayout(null);
+        Category5Panel.setVisible(false);
+        main.add(Category5Panel);
+
+        JPanel Category6Panel = new JPanel();
+        Category6Panel.setBounds(0,0,800,600);
+        Category6Panel.setBackground(Color.lightGray);
+        Category6Panel.setLayout(null);
+        Category6Panel.setVisible(false);
+        main.add(Category6Panel);
+
+        JPanel Category7Panel = new JPanel();
+        Category7Panel.setBounds(0,0,800,600);
+        Category7Panel.setBackground(Color.lightGray);
+        Category7Panel.setLayout(null);
+        Category7Panel.setVisible(false);
+        main.add(Category7Panel);
+
+        JButton Category1Return = new JButton("Back");
+        Category1Return.setBounds(25,30,100,50);
+        Category1Panel.add(Category1Return);
+
+        JButton Category2Return = new JButton("Back");
+        Category2Return.setBounds(25,30,100,50);
+        Category2Panel.add(Category2Return);
+
+        JButton Category3Return = new JButton("Back");
+        Category3Return.setBounds(25,30,100,50);
+        Category3Panel.add(Category3Return);
+
+        JButton Category4Return = new JButton("Back");
+        Category4Return.setBounds(25,30,100,50);
+        Category4Panel.add(Category4Return);
+
+        JButton Category5Return = new JButton("Back");
+        Category5Return.setBounds(25,30,100,50);
+        Category5Panel.add(Category5Return);
+
+        JButton Category6Return = new JButton("Back");
+        Category6Return.setBounds(25,30,100,50);
+        Category6Panel.add(Category6Return);
+
+        JButton Category7Return = new JButton("Back");
+        Category7Return.setBounds(25,30,100,50);
+        Category7Panel.add(Category7Return);
+
         JButton Category1 = new JButton("");
         Category1.setBounds(25,100,150,50);
 
@@ -81,6 +158,49 @@ public class SimplyTask {
 
         JButton Category7 = new JButton("");
         Category7.setBounds(25,400,150,50);
+
+        JLabel Category1Label = new JLabel("",SwingConstants.CENTER);
+        Category1Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category1Label.setBounds(260,0,300,100);
+        Category1Label.setVisible(true);
+        Category1Panel.add(Category1Label);
+
+        JLabel Category2Label = new JLabel("",SwingConstants.CENTER);
+        Category2Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category2Label.setBounds(260,0,300,100);
+        Category2Label.setVisible(true);
+        Category2Panel.add(Category2Label);
+
+        JLabel Category3Label = new JLabel("",SwingConstants.CENTER);
+        Category3Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category3Label.setBounds(260,0,300,100);
+        Category3Label.setVisible(true);
+        Category3Panel.add(Category3Label);
+
+        JLabel Category4Label = new JLabel("",SwingConstants.CENTER);
+        Category4Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category4Label.setBounds(260,0,300,100);
+        Category4Label.setVisible(true);
+        Category4Panel.add(Category4Label);
+
+        JLabel Category5Label = new JLabel("",SwingConstants.CENTER);
+        Category5Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category5Label.setBounds(260,0,300,100);
+        Category5Label.setVisible(true);
+        Category5Panel.add(Category5Label);
+
+        JLabel Category6Label = new JLabel("",SwingConstants.CENTER);
+        Category6Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category6Label.setBounds(260,0,300,100);
+        Category6Label.setVisible(true);
+        Category6Panel.add(Category6Label);
+
+        JLabel Category7Label = new JLabel("",SwingConstants.CENTER);
+        Category7Label.setFont(new Font("Klose Slab",Font.BOLD,35));
+        Category7Label.setBounds(260,0,300,100);
+        Category7Label.setVisible(true);
+        Category7Panel.add(Category7Label);
+
 
         AddCategoriesButton.addActionListener(new ActionListener() {
             @Override
@@ -152,7 +272,124 @@ public class SimplyTask {
             }
         });
 
+        Category1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category1Panel.setVisible(true);
+                Category1Label.setText(Category1.getText());  //add this to other lines below
+            }
+        });
 
+        Category1Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category1Panel.setVisible(false);
+            }
+        });
+
+        Category2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category2Panel.setVisible(true);
+                Category2Label.setText(Category2.getText());
+            }
+        });
+
+        Category2Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category2Panel.setVisible(false);
+            }
+        });
+
+        Category3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category3Panel.setVisible(true);
+                Category3Label.setText(Category3.getText());
+            }
+        });
+
+        Category3Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category3Panel.setVisible(false);
+            }
+        });
+
+        Category4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category4Panel.setVisible(true);
+                Category4Label.setText(Category4.getText());
+            }
+        });
+
+        Category4Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category4Panel.setVisible(false);
+            }
+        });
+
+        Category5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category5Panel.setVisible(true);
+                Category5Label.setText(Category5.getText());
+            }
+        });
+
+        Category5Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category5Panel.setVisible(false);
+            }
+        });
+
+        Category6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category6Panel.setVisible(true);
+                Category6Label.setText(Category6.getText());
+            }
+        });
+
+        Category6Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category6Panel.setVisible(false);
+            }
+        });
+
+        Category7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(false);
+                Category7Panel.setVisible(true);
+                Category7Label.setText(Category7.getText());
+            }
+        });
+
+        Category7Return.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CategoryPanel.setVisible(true);
+                Category7Panel.setVisible(false);
+            }
+        });
         main.setVisible(true);
     }
 }
