@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 
 public class SimplyTask {
     private static int CategoryButtonClick = 0;
+    private static int AddTaskCategory1 = 0;
     public static void main(String [ ] args)
     {
         JFrame main = new JFrame("Simply Task");
@@ -259,6 +260,46 @@ public class SimplyTask {
         Category7Label.setBounds(260,0,300,100);
         Category7Label.setVisible(true);
         Category7Panel.add(Category7Label);
+
+        JButton Category1AddTask = new JButton("Add Task");
+        Category1AddTask.setBounds(675,30,100,50);
+        Category1Panel.add(Category1AddTask);
+
+        JCheckBox Category1Task1 = new JCheckBox("");
+        Category1Task1.setBounds(50,100,400,30);
+        Category1Panel.add(Category1Task1);
+        Category1Task1.setVisible(false);
+
+        JCheckBox Category1Task2 = new JCheckBox("");
+        Category1Task2.setBounds(50,130,400,30);
+        Category1Panel.add(Category1Task2);
+        Category1Task2.setVisible(false);
+
+        JCheckBox Category1Task3 = new JCheckBox("");
+        Category1Task3.setBounds(50,160,400,30);
+        Category1Panel.add(Category1Task3);
+        Category1Task3.setVisible(false);
+
+        JCheckBox Category1Task4 = new JCheckBox("");
+        Category1Task4.setBounds(50,190,400,30);
+        Category1Panel.add(Category1Task4);
+        Category1Task4.setVisible(false);
+
+        JCheckBox Category1Task5 = new JCheckBox("");
+        Category1Task5.setBounds(50,220,400,30);
+        Category1Panel.add(Category1Task5);
+        Category1Task5.setVisible(false);
+
+        JFrame Category1TaskWindow = new JFrame("Add Task");
+        Category1TaskWindow.setBounds(0,0,400,300);
+        Category1TaskWindow.setResizable(false);
+        Category1TaskWindow.setLocationRelativeTo(null);
+        Category1TaskWindow.setLayout(null);
+
+        JTextField Category1TaskTextField = new JTextField();
+        Category1TaskTextField.setBounds(100,20,200,50);
+        Category1TaskWindow.add(Category1TaskTextField);
+
 
 
         AddCategoriesButton.addActionListener(new ActionListener() {
@@ -517,6 +558,15 @@ public class SimplyTask {
                 main.add(line3);
                 main.add(line4);
                 main.add(Art);
+            }
+        });
+
+        Category1AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Opens jframe with text box and and can name first category
+                Category1TaskWindow.setVisible(true);
+                //make sure to add a a button to add the jframe and to assign the int count and the string to set text
             }
         });
         main.setVisible(true);
