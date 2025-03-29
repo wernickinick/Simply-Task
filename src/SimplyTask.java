@@ -76,7 +76,7 @@ public class SimplyTask {
 
         JPanel CategoryPanel = new JPanel();
         CategoryPanel.setBounds(0,0,200,600);
-        CategoryPanel.setBackground(Color.GRAY);
+        CategoryPanel.setBackground(Color.LIGHT_GRAY);
         CategoryPanel.setLayout(null);
         main.add(CategoryPanel);
 
