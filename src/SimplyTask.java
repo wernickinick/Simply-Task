@@ -14,6 +14,65 @@ public class SimplyTask {
         main.setLayout(null);
         main.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        JLabel line1 = new JLabel(" ▗▄▄▖▗▄▄▄▖▗▖  ▗▖▗▄▄▖ ▗▖ ▗▖  ▗▖    ▗▄▄▄▖▗▄▖  ▗▄▄▖▗▖ ▗▖");
+        JLabel line2 = new JLabel("▐▌     █  ▐▛▚▞▜▌▐▌ ▐▌▐▌  ▝▚▞▘       █ ▐▌ ▐▌▐▌   ▐▌▗▞▘");
+        JLabel line3 = new JLabel(" ▝▀▚▖  █  ▐▌  ▐▌▐▛▀▘ ▐▌   ▐▌        █ ▐▛▀▜▌ ▝▀▚▖▐▛▚▖ ");
+        JLabel line4 = new JLabel("▗▄▄▞▘▗▄█▄▖▐▌  ▐▌▐▌   ▐▙▄▄▖▐▌        █ ▐▌ ▐▌▗▄▄▞▘▐▌ ▐▌");
+
+        line1.setFont(new Font("MonoSpaced", Font.PLAIN,16));
+        line2.setFont(new Font("MonoSpaced", Font.PLAIN,16));
+        line3.setFont(new Font("MonoSpaced", Font.PLAIN,16));
+        line4.setFont(new Font("MonoSpaced", Font.PLAIN,16));
+
+        line1.setVisible(true);
+        line2.setVisible(true);
+        line3.setVisible(true);
+        line4.setVisible(true);
+
+        line1.setBounds(240,0,600,20);
+        line2.setBounds(240,15,600,20);
+        line3.setBounds(240,30,600,20);
+        line4.setBounds(240,45,600,20);
+
+        main.add(line1);
+        main.add(line2);
+        main.add(line3);
+        main.add(line4);
+
+        String PcArt = "            ________________________________________________\n" +
+                "            /                                                \\\n" +
+                "           |    _________________________________________     |\n" +
+                "           |   |                                         |    |\n" +
+                "           |   |                SIMPLY TASK              |    |\n" +
+                "           |   |  CATEGORY                               |    |\n" +
+                "           |   |                                         |    |\n" +
+                "           |   |  [ADD TASK]                             |    |\n" +
+                "           |   |               [] ------                 |    |\n" +
+                "           |   |               [] --------               |    |\n" +
+                "           |   |               [] -----                  |    |\n" +
+                "           |   |               [] ------                 |    |\n" +
+                "           |   |               [] ---                    |    |\n" +
+                "           |   |                                         |    |\n" +
+                "           |   |                                         |    |\n" +
+                "           |   |                                         |    |\n" +
+                "           |   |_________________________________________|    |\n" +
+                "           |                                                  |\n" +
+                "            \\_________________________________________________/\n" +
+                "                   \\___________________________________/\n" +
+                "                ___________________________________________\n" +
+                "             _-'    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.  --- `-_\n" +
+                "          _-'.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.  .-.-.`-_\n" +
+                "       _-'.-.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-`__`. .-.-.-.`-_\n" +
+                "    _-'.-.-.-.-. .-----.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-----. .-.-.-.-.`-_\n" +
+                " _-'.-.-.-.-.-. .---.-. .-------------------------. .-.---. .---.-.-.-.`-_\n" +
+                ":-------------------------------------------------------------------------:\n" +
+                "`---._.-------------------------------------------------------------._.---'";
+        JLabel Art = new JLabel("<html><pre>" + PcArt + "</pre></html>");
+        Art.setFont(new Font("MonoSpaced", Font.PLAIN,12));
+        Art.setVisible(true);
+        Art.setBounds(240,20,800,600);
+        main.add(Art);
+
         JPanel CategoryPanel = new JPanel();
         CategoryPanel.setBounds(0,0,200,600);
         CategoryPanel.setBackground(Color.GRAY);
@@ -277,7 +336,12 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(false);
                 Category1Panel.setVisible(true);
-                Category1Label.setText(Category1.getText());  //add this to other lines below
+                Category1Label.setText(Category1.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -286,6 +350,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category1Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -295,6 +364,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category2Panel.setVisible(true);
                 Category2Label.setText(Category2.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -303,6 +377,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category2Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -312,6 +391,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category3Panel.setVisible(true);
                 Category3Label.setText(Category3.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -320,6 +404,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category3Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -329,6 +418,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category4Panel.setVisible(true);
                 Category4Label.setText(Category4.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -337,6 +431,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category4Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -346,6 +445,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category5Panel.setVisible(true);
                 Category5Label.setText(Category5.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -354,6 +458,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category5Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -363,6 +472,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category6Panel.setVisible(true);
                 Category6Label.setText(Category6.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -371,6 +485,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category6Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
 
@@ -380,6 +499,11 @@ public class SimplyTask {
                 CategoryPanel.setVisible(false);
                 Category7Panel.setVisible(true);
                 Category7Label.setText(Category7.getText());
+                main.remove(line1);
+                main.remove(line2);
+                main.remove(line3);
+                main.remove(line4);
+                main.remove(Art);
             }
         });
 
@@ -388,6 +512,11 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 CategoryPanel.setVisible(true);
                 Category7Panel.setVisible(false);
+                main.add(line1);
+                main.add(line2);
+                main.add(line3);
+                main.add(line4);
+                main.add(Art);
             }
         });
         main.setVisible(true);
