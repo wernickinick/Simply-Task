@@ -6,6 +6,12 @@ import java.awt.event.ActionEvent;
 public class SimplyTask {
     private static int CategoryButtonClick = 0;
     private static int AddTaskCategory1 = 0;
+    private static int AddTaskCategory2 = 0;
+    private static int AddTaskCategory3 = 0;
+    private static int AddTaskCategory4 = 0;
+    private static int AddTaskCategory5 = 0;
+    private static int AddTaskCategory6 = 0;
+    private static int AddTaskCategory7 = 0;
     public static void main(String [ ] args)
     {
         JFrame main = new JFrame("Simply Task");
@@ -55,7 +61,7 @@ public class SimplyTask {
                 "           |   |               [] ---                    |    |\n" +
                 "           |   |                                         |    |\n" +
                 "           |   |                                         |    |\n" +
-                "           |   |                                         |    |\n" +
+                "           |   |           BY NICHOLAS WERNICKI          |    |\n" +
                 "           |   |_________________________________________|    |\n" +
                 "           |                                                  |\n" +
                 "            \\_________________________________________________/\n" +
@@ -260,7 +266,7 @@ public class SimplyTask {
         Category7Label.setBounds(260,0,300,100);
         Category7Label.setVisible(true);
         Category7Panel.add(Category7Label);
-
+//Category 1 Adding Task Feature
         JButton Category1AddTask = new JButton("Add Task");
         Category1AddTask.setBounds(675,30,100,50);
         Category1Panel.add(Category1AddTask);
@@ -300,7 +306,287 @@ public class SimplyTask {
         Category1TaskTextField.setBounds(100,20,200,50);
         Category1TaskWindow.add(Category1TaskTextField);
 
+        JButton AddingCategory1TaskButton = new JButton("Add Task");
+        AddingCategory1TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory1TaskButton.setBounds(130,130,150,50);
+        Category1TaskWindow.add(AddingCategory1TaskButton);
+//Category 1  Add Task End of Feature
 
+//Category 2 Add Task Feature
+        JButton Category2AddTask = new JButton("Add Task");
+        Category2AddTask.setBounds(675,30,100,50);
+        Category2Panel.add(Category2AddTask);
+
+        JCheckBox Category2Task1 = new JCheckBox("");
+        Category2Task1.setBounds(50,100,400,30);
+        Category2Panel.add(Category2Task1);
+        Category2Task1.setVisible(false);
+
+        JCheckBox Category2Task2 = new JCheckBox("");
+        Category2Task2.setBounds(50,130,400,30);
+        Category2Panel.add(Category2Task2);
+        Category2Task2.setVisible(false);
+
+        JCheckBox Category2Task3 = new JCheckBox("");
+        Category2Task3.setBounds(50,160,400,30);
+        Category2Panel.add(Category2Task3);
+        Category2Task3.setVisible(false);
+
+        JCheckBox Category2Task4 = new JCheckBox("");
+        Category2Task4.setBounds(50,190,400,30);
+        Category2Panel.add(Category2Task4);
+        Category2Task4.setVisible(false);
+
+        JCheckBox Category2Task5 = new JCheckBox("");
+        Category2Task5.setBounds(50,220,400,30);
+        Category2Panel.add(Category2Task5);
+        Category2Task5.setVisible(false);
+
+        JFrame Category2TaskWindow = new JFrame("Add Task");
+        Category2TaskWindow.setBounds(0,0,400,300);
+        Category2TaskWindow.setResizable(false);
+        Category2TaskWindow.setLocationRelativeTo(null);
+        Category2TaskWindow.setLayout(null);
+
+        JTextField Category2TaskTextField = new JTextField();
+        Category2TaskTextField.setBounds(100,20,200,50);
+        Category2TaskWindow.add(Category2TaskTextField);
+
+        JButton AddingCategory2TaskButton = new JButton("Add Task");
+        AddingCategory2TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory2TaskButton.setBounds(130,130,150,50);
+        Category2TaskWindow.add(AddingCategory2TaskButton);
+//Category 2 Add Task Feature End
+
+//Category 3 Add Task Feature
+        JButton Category3AddTask = new JButton("Add Task");
+        Category3AddTask.setBounds(675,30,100,50);
+        Category3Panel.add(Category3AddTask);
+
+        JCheckBox Category3Task1 = new JCheckBox("");
+        Category3Task1.setBounds(50,100,400,30);
+        Category3Panel.add(Category3Task1);
+        Category3Task1.setVisible(false);
+
+        JCheckBox Category3Task2 = new JCheckBox("");
+        Category3Task2.setBounds(50,130,400,30);
+        Category3Panel.add(Category3Task2);
+        Category3Task2.setVisible(false);
+
+        JCheckBox Category3Task3 = new JCheckBox("");
+        Category3Task3.setBounds(50,160,400,30);
+        Category3Panel.add(Category3Task3);
+        Category3Task3.setVisible(false);
+
+        JCheckBox Category3Task4 = new JCheckBox("");
+        Category3Task4.setBounds(50,190,400,30);
+        Category3Panel.add(Category3Task4);
+        Category3Task4.setVisible(false);
+
+        JCheckBox Category3Task5 = new JCheckBox("");
+        Category3Task5.setBounds(50,220,400,30);
+        Category3Panel.add(Category3Task5);
+        Category3Task5.setVisible(false);
+
+        JFrame Category3TaskWindow = new JFrame("Add Task");
+        Category3TaskWindow.setBounds(0,0,400,300);
+        Category3TaskWindow.setResizable(false);
+        Category3TaskWindow.setLocationRelativeTo(null);
+        Category3TaskWindow.setLayout(null);
+
+        JTextField Category3TaskTextField = new JTextField();
+        Category3TaskTextField.setBounds(100,20,200,50);
+        Category3TaskWindow.add(Category3TaskTextField);
+
+        JButton AddingCategory3TaskButton = new JButton("Add Task");
+        AddingCategory3TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory3TaskButton.setBounds(130,130,150,50);
+        Category3TaskWindow.add(AddingCategory3TaskButton);
+//Category 3 Add Task Feature End
+
+//Category 4 Add Task Feature
+        JButton Category4AddTask = new JButton("Add Task");
+        Category4AddTask.setBounds(675,30,100,50);
+        Category4Panel.add(Category4AddTask);
+
+        JCheckBox Category4Task1 = new JCheckBox("");
+        Category4Task1.setBounds(50,100,400,30);
+        Category4Panel.add(Category4Task1);
+        Category4Task1.setVisible(false);
+
+        JCheckBox Category4Task2 = new JCheckBox("");
+        Category4Task2.setBounds(50,130,400,30);
+        Category4Panel.add(Category4Task2);
+        Category4Task2.setVisible(false);
+
+        JCheckBox Category4Task3 = new JCheckBox("");
+        Category4Task3.setBounds(50,160,400,30);
+        Category4Panel.add(Category4Task3);
+        Category4Task3.setVisible(false);
+
+        JCheckBox Category4Task4 = new JCheckBox("");
+        Category4Task4.setBounds(50,190,400,30);
+        Category4Panel.add(Category4Task4);
+        Category4Task4.setVisible(false);
+
+        JCheckBox Category4Task5 = new JCheckBox("");
+        Category4Task5.setBounds(50,220,400,30);
+        Category4Panel.add(Category4Task5);
+        Category4Task5.setVisible(false);
+
+        JFrame Category4TaskWindow = new JFrame("Add Task");
+        Category4TaskWindow.setBounds(0,0,400,300);
+        Category4TaskWindow.setResizable(false);
+        Category4TaskWindow.setLocationRelativeTo(null);
+        Category4TaskWindow.setLayout(null);
+
+        JTextField Category4TaskTextField = new JTextField();
+        Category4TaskTextField.setBounds(100,20,200,50);
+        Category4TaskWindow.add(Category4TaskTextField);
+
+        JButton AddingCategory4TaskButton = new JButton("Add Task");
+        AddingCategory4TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory4TaskButton.setBounds(130,130,150,50);
+        Category4TaskWindow.add(AddingCategory4TaskButton);
+//Category 4 Add Task Feature End
+
+//Category 5 Add Task Feature
+        JButton Category5AddTask = new JButton("Add Task");
+        Category5AddTask.setBounds(675,30,100,50);
+        Category5Panel.add(Category5AddTask);
+
+        JCheckBox Category5Task1 = new JCheckBox("");
+        Category5Task1.setBounds(50,100,400,30);
+        Category5Panel.add(Category5Task1);
+        Category5Task1.setVisible(false);
+
+        JCheckBox Category5Task2 = new JCheckBox("");
+        Category5Task2.setBounds(50,130,400,30);
+        Category5Panel.add(Category5Task2);
+        Category5Task2.setVisible(false);
+
+        JCheckBox Category5Task3 = new JCheckBox("");
+        Category5Task3.setBounds(50,160,400,30);
+        Category5Panel.add(Category5Task3);
+        Category5Task3.setVisible(false);
+
+        JCheckBox Category5Task4 = new JCheckBox("");
+        Category5Task4.setBounds(50,190,400,30);
+        Category5Panel.add(Category5Task4);
+        Category5Task4.setVisible(false);
+
+        JCheckBox Category5Task5 = new JCheckBox("");
+        Category5Task5.setBounds(50,220,400,30);
+        Category5Panel.add(Category5Task5);
+        Category5Task5.setVisible(false);
+
+        JFrame Category5TaskWindow = new JFrame("Add Task");
+        Category5TaskWindow.setBounds(0,0,400,300);
+        Category5TaskWindow.setResizable(false);
+        Category5TaskWindow.setLocationRelativeTo(null);
+        Category5TaskWindow.setLayout(null);
+
+        JTextField Category5TaskTextField = new JTextField();
+        Category5TaskTextField.setBounds(100,20,200,50);
+        Category5TaskWindow.add(Category5TaskTextField);
+
+        JButton AddingCategory5TaskButton = new JButton("Add Task");
+        AddingCategory5TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory5TaskButton.setBounds(130,130,150,50);
+        Category5TaskWindow.add(AddingCategory5TaskButton);
+//Category 5 Add Task Feature End
+
+//Category 6 Add Task Feature
+        JButton Category6AddTask = new JButton("Add Task");
+        Category6AddTask.setBounds(675,30,100,50);
+        Category6Panel.add(Category6AddTask);
+
+        JCheckBox Category6Task1 = new JCheckBox("");
+        Category6Task1.setBounds(50,100,400,30);
+        Category6Panel.add(Category6Task1);
+        Category6Task1.setVisible(false);
+
+        JCheckBox Category6Task2 = new JCheckBox("");
+        Category6Task2.setBounds(50,130,400,30);
+        Category6Panel.add(Category6Task2);
+        Category6Task2.setVisible(false);
+
+        JCheckBox Category6Task3 = new JCheckBox("");
+        Category6Task3.setBounds(50,160,400,30);
+        Category6Panel.add(Category6Task3);
+        Category6Task3.setVisible(false);
+
+        JCheckBox Category6Task4 = new JCheckBox("");
+        Category6Task4.setBounds(50,190,400,30);
+        Category6Panel.add(Category6Task4);
+        Category6Task4.setVisible(false);
+
+        JCheckBox Category6Task5 = new JCheckBox("");
+        Category6Task5.setBounds(50,220,400,30);
+        Category6Panel.add(Category6Task5);
+        Category6Task5.setVisible(false);
+
+        JFrame Category6TaskWindow = new JFrame("Add Task");
+        Category6TaskWindow.setBounds(0,0,400,300);
+        Category6TaskWindow.setResizable(false);
+        Category6TaskWindow.setLocationRelativeTo(null);
+        Category6TaskWindow.setLayout(null);
+
+        JTextField Category6TaskTextField = new JTextField();
+        Category6TaskTextField.setBounds(100,20,200,50);
+        Category6TaskWindow.add(Category6TaskTextField);
+
+        JButton AddingCategory6TaskButton = new JButton("Add Task");
+        AddingCategory6TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory6TaskButton.setBounds(130,130,150,50);
+        Category6TaskWindow.add(AddingCategory6TaskButton);
+//Category 6 Add Task Feature End
+
+//Category 7 Add Task Feature
+        JButton Category7AddTask = new JButton("Add Task");
+        Category7AddTask.setBounds(675,30,100,50);
+        Category7Panel.add(Category7AddTask);
+
+        JCheckBox Category7Task1 = new JCheckBox("");
+        Category7Task1.setBounds(50,100,400,30);
+        Category7Panel.add(Category7Task1);
+        Category7Task1.setVisible(false);
+
+        JCheckBox Category7Task2 = new JCheckBox("");
+        Category7Task2.setBounds(50,130,400,30);
+        Category7Panel.add(Category7Task2);
+        Category7Task2.setVisible(false);
+
+        JCheckBox Category7Task3 = new JCheckBox("");
+        Category7Task3.setBounds(50,160,400,30);
+        Category7Panel.add(Category7Task3);
+        Category7Task3.setVisible(false);
+
+        JCheckBox Category7Task4 = new JCheckBox("");
+        Category7Task4.setBounds(50,190,400,30);
+        Category7Panel.add(Category7Task4);
+        Category7Task4.setVisible(false);
+
+        JCheckBox Category7Task5 = new JCheckBox("");
+        Category7Task5.setBounds(50,220,400,30);
+        Category7Panel.add(Category7Task5);
+        Category7Task5.setVisible(false);
+
+        JFrame Category7TaskWindow = new JFrame("Add Task");
+        Category7TaskWindow.setBounds(0,0,400,300);
+        Category7TaskWindow.setResizable(false);
+        Category7TaskWindow.setLocationRelativeTo(null);
+        Category7TaskWindow.setLayout(null);
+
+        JTextField Category7TaskTextField = new JTextField();
+        Category7TaskTextField.setBounds(100,20,200,50);
+        Category7TaskWindow.add(Category7TaskTextField);
+
+        JButton AddingCategory7TaskButton = new JButton("Add Task");
+        AddingCategory7TaskButton.setFont(new Font("Klose Slab",Font.BOLD,15));
+        AddingCategory7TaskButton.setBounds(130,130,150,50);
+        Category7TaskWindow.add(AddingCategory7TaskButton);
+//Category 7 Add Task Feature End
 
         AddCategoriesButton.addActionListener(new ActionListener() {
             @Override
@@ -566,7 +852,349 @@ public class SimplyTask {
             public void actionPerformed(ActionEvent e) {
                 //Opens jframe with text box and and can name first category
                 Category1TaskWindow.setVisible(true);
-                //make sure to add a a button to add the jframe and to assign the int count and the string to set text
+            }
+        });
+
+        AddingCategory1TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory1++;
+                String Category1Tasks = Category1TaskTextField.getText();
+                if(AddTaskCategory1 == 1)
+                {
+                    Category1Task1.setVisible(true);
+                    Category1Task1.setText(Category1Tasks);
+                    Category1TaskWindow.dispose();
+                    Category1TaskTextField.setText("");
+                }
+                if(AddTaskCategory1 == 2)
+                {
+                    Category1Task2.setVisible(true);
+                    Category1Task2.setText(Category1Tasks);
+                    Category1TaskWindow.dispose();
+                    Category1TaskTextField.setText("");
+                }
+                if(AddTaskCategory1 == 3)
+                {
+                    Category1Task3.setVisible(true);
+                    Category1Task3.setText(Category1Tasks);
+                    Category1TaskWindow.dispose();
+                    Category1TaskTextField.setText("");
+                }
+                if(AddTaskCategory1 == 4)
+                {
+                    Category1Task4.setVisible(true);
+                    Category1Task4.setText(Category1Tasks);
+                    Category1TaskWindow.dispose();
+                    Category1TaskTextField.setText("");
+                }
+                if(AddTaskCategory1 == 5)
+                {
+                    Category1Task5.setVisible(true);
+                    Category1Task5.setText(Category1Tasks);
+                    Category1TaskWindow.dispose();
+                    Category1TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category2AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category2TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory2TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory2++;
+                String Category2Tasks = Category2TaskTextField.getText();
+                if(AddTaskCategory2 == 1)
+                {
+                    Category2Task1.setVisible(true);
+                    Category2Task1.setText(Category2Tasks);
+                    Category2TaskWindow.dispose();
+                    Category2TaskTextField.setText("");
+                }
+                if(AddTaskCategory2 == 2)
+                {
+                    Category2Task2.setVisible(true);
+                    Category2Task2.setText(Category2Tasks);
+                    Category2TaskWindow.dispose();
+                    Category2TaskTextField.setText("");
+                }
+                if(AddTaskCategory2 == 3)
+                {
+                    Category2Task3.setVisible(true);
+                    Category2Task3.setText(Category2Tasks);
+                    Category2TaskWindow.dispose();
+                    Category2TaskTextField.setText("");
+                }
+                if(AddTaskCategory2 == 4)
+                {
+                    Category2Task4.setVisible(true);
+                    Category2Task4.setText(Category2Tasks);
+                    Category2TaskWindow.dispose();
+                    Category2TaskTextField.setText("");
+                }
+                if(AddTaskCategory2 == 5)
+                {
+                    Category2Task5.setVisible(true);
+                    Category2Task5.setText(Category2Tasks);
+                    Category2TaskWindow.dispose();
+                    Category2TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category3AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category3TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory3TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory3++;
+                String Category3Tasks = Category3TaskTextField.getText();
+                if(AddTaskCategory3 == 1)
+                {
+                    Category3Task1.setVisible(true);
+                    Category3Task1.setText(Category3Tasks);
+                    Category3TaskWindow.dispose();
+                    Category3TaskTextField.setText("");
+                }
+                if(AddTaskCategory3 == 2)
+                {
+                    Category3Task2.setVisible(true);
+                    Category3Task2.setText(Category3Tasks);
+                    Category3TaskWindow.dispose();
+                    Category3TaskTextField.setText("");
+                }
+                if(AddTaskCategory3 == 3)
+                {
+                    Category3Task3.setVisible(true);
+                    Category3Task3.setText(Category3Tasks);
+                    Category3TaskWindow.dispose();
+                    Category3TaskTextField.setText("");
+                }
+                if(AddTaskCategory3 == 4)
+                {
+                    Category3Task4.setVisible(true);
+                    Category3Task4.setText(Category3Tasks);
+                    Category3TaskWindow.dispose();
+                    Category3TaskTextField.setText("");
+                }
+                if(AddTaskCategory3 == 5)
+                {
+                    Category3Task5.setVisible(true);
+                    Category3Task5.setText(Category3Tasks);
+                    Category3TaskWindow.dispose();
+                    Category3TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category4AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category4TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory4TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory4++;
+                String Category4Tasks = Category4TaskTextField.getText();
+                if(AddTaskCategory4 == 1)
+                {
+                    Category4Task1.setVisible(true);
+                    Category4Task1.setText(Category4Tasks);
+                    Category4TaskWindow.dispose();
+                    Category4TaskTextField.setText("");
+                }
+                if(AddTaskCategory4 == 2)
+                {
+                    Category4Task2.setVisible(true);
+                    Category4Task2.setText(Category4Tasks);
+                    Category4TaskWindow.dispose();
+                    Category4TaskTextField.setText("");
+                }
+                if(AddTaskCategory4 == 3)
+                {
+                    Category4Task3.setVisible(true);
+                    Category4Task3.setText(Category4Tasks);
+                    Category4TaskWindow.dispose();
+                    Category4TaskTextField.setText("");
+                }
+                if(AddTaskCategory4 == 4)
+                {
+                    Category4Task4.setVisible(true);
+                    Category4Task4.setText(Category4Tasks);
+                    Category4TaskWindow.dispose();
+                    Category4TaskTextField.setText("");
+                }
+                if(AddTaskCategory4 == 5)
+                {
+                    Category4Task5.setVisible(true);
+                    Category4Task5.setText(Category4Tasks);
+                    Category4TaskWindow.dispose();
+                    Category4TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category5AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category5TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory5TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory5++;
+                String Category5Tasks = Category5TaskTextField.getText();
+                if(AddTaskCategory5 == 1)
+                {
+                    Category5Task1.setVisible(true);
+                    Category5Task1.setText(Category5Tasks);
+                    Category5TaskWindow.dispose();
+                    Category5TaskTextField.setText("");
+                }
+                if(AddTaskCategory5 == 2)
+                {
+                    Category5Task2.setVisible(true);
+                    Category5Task2.setText(Category5Tasks);
+                    Category5TaskWindow.dispose();
+                    Category5TaskTextField.setText("");
+                }
+                if(AddTaskCategory5 == 3)
+                {
+                    Category5Task3.setVisible(true);
+                    Category5Task3.setText(Category5Tasks);
+                    Category5TaskWindow.dispose();
+                    Category5TaskTextField.setText("");
+                }
+                if(AddTaskCategory5 == 4)
+                {
+                    Category5Task4.setVisible(true);
+                    Category5Task4.setText(Category5Tasks);
+                    Category5TaskWindow.dispose();
+                    Category5TaskTextField.setText("");
+                }
+                if(AddTaskCategory5 == 5)
+                {
+                    Category5Task5.setVisible(true);
+                    Category5Task5.setText(Category5Tasks);
+                    Category5TaskWindow.dispose();
+                    Category5TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category6AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category6TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory6TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory6++;
+                String Category6Tasks = Category6TaskTextField.getText();
+                if(AddTaskCategory6 == 1)
+                {
+                    Category6Task1.setVisible(true);
+                    Category6Task1.setText(Category6Tasks);
+                    Category6TaskWindow.dispose();
+                    Category6TaskTextField.setText("");
+                }
+                if(AddTaskCategory6 == 2)
+                {
+                    Category6Task2.setVisible(true);
+                    Category6Task2.setText(Category6Tasks);
+                    Category6TaskWindow.dispose();
+                    Category6TaskTextField.setText("");
+                }
+                if(AddTaskCategory6 == 3)
+                {
+                    Category6Task3.setVisible(true);
+                    Category6Task3.setText(Category6Tasks);
+                    Category6TaskWindow.dispose();
+                    Category6TaskTextField.setText("");
+                }
+                if(AddTaskCategory6 == 4)
+                {
+                    Category6Task4.setVisible(true);
+                    Category6Task4.setText(Category6Tasks);
+                    Category6TaskWindow.dispose();
+                    Category6TaskTextField.setText("");
+                }
+                if(AddTaskCategory6 == 5)
+                {
+                    Category6Task5.setVisible(true);
+                    Category6Task5.setText(Category6Tasks);
+                    Category6TaskWindow.dispose();
+                    Category6TaskTextField.setText("");
+                }
+            }
+        });
+
+        Category7AddTask.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Category7TaskWindow.setVisible(true);
+            }
+        });
+
+        AddingCategory7TaskButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                AddTaskCategory7++;
+                String Category7Tasks = Category7TaskTextField.getText();
+                if(AddTaskCategory7 == 1)
+                {
+                    Category7Task1.setVisible(true);
+                    Category7Task1.setText(Category7Tasks);
+                    Category7TaskWindow.dispose();
+                    Category7TaskTextField.setText("");
+                }
+                if(AddTaskCategory7 == 2)
+                {
+                    Category7Task2.setVisible(true);
+                    Category7Task2.setText(Category7Tasks);
+                    Category7TaskWindow.dispose();
+                    Category7TaskTextField.setText("");
+                }
+                if(AddTaskCategory7 == 3)
+                {
+                    Category7Task3.setVisible(true);
+                    Category7Task3.setText(Category7Tasks);
+                    Category7TaskWindow.dispose();
+                    Category7TaskTextField.setText("");
+                }
+                if(AddTaskCategory7 == 4)
+                {
+                    Category7Task4.setVisible(true);
+                    Category7Task4.setText(Category7Tasks);
+                    Category7TaskWindow.dispose();
+                    Category7TaskTextField.setText("");
+                }
+                if(AddTaskCategory7 == 5)
+                {
+                    Category7Task5.setVisible(true);
+                    Category7Task5.setText(Category7Tasks);
+                    Category7TaskWindow.dispose();
+                    Category7TaskTextField.setText("");
+                }
             }
         });
         main.setVisible(true);
