@@ -46,12 +46,3 @@ Contributions are welcome! If you have any ideas for improvements or find any bu
 ## Author
 
 Nicholas Wernicki
-
-## Image Placement Suggestions
-
-Here are four places you could add images to your README to make it more visually appealing and informative:
-
-1.  **Below the "Screenshots" heading:** This is the most common place to showcase the application's interface. You can include screenshots of the main window, the category creation process, a category with added tasks, and the task addition dialog.
-2.  **Within the "How to Use" section:** You could embed a small image or GIF next to the relevant step to visually guide the user. For example, an image of the "Add" button being clicked, or the category input window.
-3.  **As a header image:** Some repositories use a banner image at the very top of the README to provide a quick visual introduction to the project. This could be a clean graphic representing the app's name or a stylized screenshot.
-4.  **In the "Features" section:** You could use small icons or illustrative images next to each feature to make the list more engaging. For example, a plus sign icon next to "Category Creation" or a checkbox icon next to "Task Management".
