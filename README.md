@@ -2,7 +2,7 @@
 ![Screenshot 2025-03-30 at 2 12 46 AM](https://github.com/user-attachments/assets/f816da4a-393b-4be9-b9b6-2b5d2b74c482)
 
 
-Simply Task provides a straightforward way to organize your tasks by allowing you to create categories and add tasks within those categories. It features a clean, user-friendly graphical interface built with Java Swing.
+Simply Task provides a straightforward way to organize your tasks by allowing you to create categories and add tasks within those categories. It features a clean, user-friendly graphical interface built with Java.
 
 ## Features
 
