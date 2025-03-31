@@ -19,7 +19,7 @@ Simply Task provides a straightforward way to organize your tasks by allowing yo
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository_url>
+    git clone <https://github.com/wernickinick/Simply-Task.git>
     ```
 2.  **Navigate to the project directory:**
     ```bash
